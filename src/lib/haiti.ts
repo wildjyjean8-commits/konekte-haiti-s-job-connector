@@ -108,6 +108,7 @@ export const SECTORS: Option[] = [
   { value: "environnement", fr: "Environnement", ht: "Anviwònman" },
   { value: "peche", fr: "Pêche", ht: "Lapèch" },
   { value: "restauration", fr: "Restauration", ht: "Restorasyon" },
+  { value: "beaute_bien_etre", fr: "Beauté & bien-être", ht: "Bote & byennèt" },
   { value: "immobilier", fr: "Immobilier", ht: "Imobilye" },
   { value: "sport_culture", fr: "Sport & culture", ht: "Espò & kilti" },
   { value: "autre", fr: "Autre", ht: "Lòt" },

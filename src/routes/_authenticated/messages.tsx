@@ -9,7 +9,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useI18n } from "@/lib/i18n";
 import { useAuth } from "@/lib/auth";
 import { supabase } from "@/integrations/supabase/client";
-import { initials, timeAgo } from "@/lib/konekte";
+import { initials, notify, timeAgo } from "@/lib/konekte";
 
 type MsgSearch = { c?: string };
 
@@ -41,10 +41,21 @@ function Messages() {
     queryFn: async () => {
       const { data, error } = await supabase
         .from("conversations")
-        .select("id,last_message_at,job_id,institutions(id,name),profiles:seeker_id(full_name),seeker_id,institution_id")
+        .select("id,last_message_at,job_id,seeker_id,institution_id,institutions(id,name,owner_id)")
         .order("last_message_at", { ascending: false });
       if (error) throw error;
-      return data ?? [];
+      const rows = data ?? [];
+
+      // profiles has no direct foreign key to conversations, so it can't be
+      // embedded in the select above — fetch seeker names separately instead.
+      const seekerIds = Array.from(new Set(rows.map((r) => r.seeker_id)));
+      let profilesById = new Map<string, { full_name: string }>();
+      if (seekerIds.length > 0) {
+        const { data: profiles } = await supabase.from("profiles").select("id,full_name").in("id", seekerIds);
+        profilesById = new Map((profiles ?? []).map((p) => [p.id, p]));
+      }
+
+      return rows.map((r) => ({ ...r, profiles: profilesById.get(r.seeker_id) ?? null }));
     },
   });
 
@@ -91,6 +102,22 @@ function Messages() {
     if (!error) {
       await supabase.from("conversations").update({ last_message_at: new Date().toISOString() }).eq("id", active);
       void qc.invalidateQueries({ queryKey: ["messages", active] });
+
+      const conv = conversations?.find((c) => c.id === active);
+      if (conv) {
+        const inst = conv.institutions as unknown as { name: string; owner_id: string } | null;
+        const isSeeker = conv.seeker_id === user.id;
+        const recipientId = isSeeker ? inst?.owner_id : conv.seeker_id;
+        if (recipientId) {
+          void notify({
+            userId: recipientId,
+            type: "message",
+            title: "Nouveau message",
+            body: body.slice(0, 120),
+            link: `/messages?c=${active}`,
+          });
+        }
+      }
     }
   };
 
