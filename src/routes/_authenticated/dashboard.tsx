@@ -112,6 +112,9 @@ function Dashboard() {
                   {j.department} · {timeAgo(j.created_at, lang)}
                 </p>
               </div>
+              <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                <Eye className="h-3.5 w-3.5" /> {j.views_count ?? 0}
+              </span>
               <Badge variant={j.status === "open" ? "default" : "secondary"}>{j.status}</Badge>
             </Card>
           ))}
