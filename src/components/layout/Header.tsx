@@ -40,7 +40,7 @@ export function Logo({ light = false }: { light?: boolean }) {
   return (
     <Link to="/" className="flex items-center gap-2">
       <span className="grid h-8 w-8 place-items-center rounded-lg bg-gold-gradient font-display text-base font-extrabold text-gold-foreground">
-        K
+        T
       </span>
       <span className={`font-display text-xl font-extrabold tracking-tight ${light ? "text-primary-foreground" : "text-foreground"}`}>
         TRAVAY
