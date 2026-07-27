@@ -121,6 +121,16 @@ export const DICT: Dict = {
   "reco.none": { fr: "Aucune recommandation.", ht: "Pa gen rekòmandasyon." },
 
   "common.loading": { fr: "Chargement…", ht: "K ap chaje…" },
+  "common.save": { fr: "Enregistrer", ht: "Anrejistre" },
+  "common.saved": { fr: "Enregistré", ht: "Anrejistre" },
+  "profile.searchable.hint": {
+    fr: "Les institutions pourront trouver votre profil.",
+    ht: "Enstitisyon yo ka jwenn pwofil ou.",
+  },
+  "cv.uploaded": { fr: "CV téléversé", ht: "CV voye" },
+  "inst.description": { fr: "Présentation", ht: "Prezantasyon" },
+  "post.title": { fr: "Intitulé du poste", ht: "Tit pòs la" },
+  "post.salary": { fr: "Salaire (optionnel)", ht: "Salè (opsyonèl)" },
   "common.cancel": { fr: "Annuler", ht: "Anile" },
   "common.close": { fr: "Fermer", ht: "Fèmen" },
   "common.add": { fr: "Ajouter", ht: "Ajoute" },
