@@ -156,7 +156,7 @@ function Dashboard() {
         <Stat
           icon={Briefcase}
           label={t("app.tagline")}
-          value={apps.filter((a) => a.status === "shortlisted" || a.status === "interview").length}
+          value={apps.filter((a) => a.status === "reviewing" || a.status === "interview").length}
         />
       </div>
 
