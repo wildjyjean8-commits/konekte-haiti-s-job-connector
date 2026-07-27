@@ -1,10 +1,10 @@
-## KONEKTE — plateforme d'emploi pour Haïti
+## TRAVAY — plateforme d'emploi pour Haïti
 
 Application full-stack (TanStack Start + Lovable Cloud) connectant institutions et chercheurs d'emploi, mobile-first, bilingue Créole/Français.
 
 ### Phase 1 — Fondations
 - Activation de Lovable Cloud (base de données, authentification, stockage de fichiers, emails).
-- Design system KONEKTE : palette chaleureuse haïtienne (bleu cobalt, rouge corail, ocre/or, sable), typographie moderne, composants mobile-first.
+- Design system TRAVAY : palette chaleureuse haïtienne (bleu cobalt, rouge corail, ocre/or, sable), typographie moderne, composants mobile-first.
 - Données de référence : 10 départements d'Haïti + leurs communes, liste extensible de secteurs d'activité.
 - Sélecteur de langue Créole/Français (traductions dans toute l'interface).
 

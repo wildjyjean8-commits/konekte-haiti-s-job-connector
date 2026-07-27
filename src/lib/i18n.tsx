@@ -20,8 +20,8 @@ export const DICT: Dict = {
 
   "home.hero.title": { fr: "Trouvez du travail. Trouvez les bonnes personnes.", ht: "Jwenn travay. Jwenn bon moun yo." },
   "home.hero.sub": {
-    fr: "KONEKTE relie les institutions et les chercheurs d'emploi dans les 10 départements d'Haïti, dans tous les secteurs.",
-    ht: "KONEKTE konekte enstitisyon ak moun k ap chèche travay nan 10 depatman Ayiti yo, nan tout sektè.",
+    fr: "TRAVAY relie les institutions et les chercheurs d'emploi dans les 10 départements d'Haïti, dans tous les secteurs.",
+    ht: "TRAVAY konekte enstitisyon ak moun k ap chèche travay nan 10 depatman Ayiti yo, nan tout sektè.",
   },
   "home.cta.seeker": { fr: "Je cherche du travail", ht: "M ap chèche travay" },
   "home.cta.institution": { fr: "Je recrute", ht: "M ap rekrite" },
@@ -53,7 +53,7 @@ export const DICT: Dict = {
   "job.coverletter": { fr: "Message d'accompagnement", ht: "Mesaj akonpayman" },
   "job.cvattached": { fr: "Votre CV sera automatiquement joint.", ht: "CV ou ap tache otomatikman." },
 
-  "auth.title": { fr: "Bienvenue sur KONEKTE", ht: "Byenveni sou KONEKTE" },
+  "auth.title": { fr: "Bienvenue sur TRAVAY", ht: "Byenveni sou TRAVAY" },
   "auth.signin": { fr: "Connexion", ht: "Koneksyon" },
   "auth.signup": { fr: "Créer un compte", ht: "Kreye yon kont" },
   "auth.email": { fr: "Email", ht: "Imèl" },

@@ -14,13 +14,13 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "KONEKTE — Trouvez un emploi en Haïti" },
+      { title: "TRAVAY — Trouvez un emploi en Haïti" },
       {
         name: "description",
         content:
-          "KONEKTE relie institutions et chercheurs d'emploi dans les 10 départements d'Haïti : offres, candidature en un clic, messagerie directe.",
+          "TRAVAY relie institutions et chercheurs d'emploi dans les 10 départements d'Haïti : offres, candidature en un clic, messagerie directe.",
       },
-      { property: "og:title", content: "KONEKTE — Trouvez un emploi en Haïti" },
+      { property: "og:title", content: "TRAVAY — Trouvez un emploi en Haïti" },
       {
         property: "og:description",
         content: "Offres d'emploi par département et commune, candidature en un clic, messagerie directe.",

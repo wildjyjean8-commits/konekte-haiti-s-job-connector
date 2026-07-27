@@ -43,7 +43,7 @@ export function Logo({ light = false }: { light?: boolean }) {
         K
       </span>
       <span className={`font-display text-xl font-extrabold tracking-tight ${light ? "text-primary-foreground" : "text-foreground"}`}>
-        KONEKTE
+        TRAVAY
       </span>
     </Link>
   );
@@ -223,7 +223,7 @@ export function Footer() {
             {t("nav.signin")}
           </Link>
         </div>
-        <p>© {new Date().getFullYear()} KONEKTE — Ayiti</p>
+        <p>© {new Date().getFullYear()} TRAVAY — Ayiti</p>
       </div>
     </footer>
   );
