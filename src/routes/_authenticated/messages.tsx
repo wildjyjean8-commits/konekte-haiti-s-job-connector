@@ -17,9 +17,9 @@ export const Route = createFileRoute("/_authenticated/messages")({
   validateSearch: (s: Record<string, unknown>): MsgSearch => ({ c: (s.c as string) || undefined }),
   head: () => ({
     meta: [
-      { title: "Messagerie — KONEKTE" },
-      { name: "description", content: "Échangez directement avec les institutions et les candidats sur KONEKTE." },
-      { property: "og:title", content: "Messagerie — KONEKTE" },
+      { title: "Messagerie — TRAVAY" },
+      { name: "description", content: "Échangez directement avec les institutions et les candidats sur TRAVAY." },
+      { property: "og:title", content: "Messagerie — TRAVAY" },
       { property: "og:description", content: "Discussion directe, sans intermédiaire." },
     ],
   }),

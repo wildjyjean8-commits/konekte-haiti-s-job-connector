@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "KONEKTE — Emplois en Haïti" },
+      { title: "TRAVAY — Emplois en Haïti" },
       {
         name: "description",
         content:
-          "KONEKTE connecte institutions et chercheurs d'emploi dans les 10 départements d'Haïti, tous secteurs confondus.",
+          "TRAVAY connecte institutions et chercheurs d'emploi dans les 10 départements d'Haïti, tous secteurs confondus.",
       },
-      { name: "author", content: "KONEKTE" },
-      { property: "og:title", content: "KONEKTE — Emplois en Haïti" },
+      { name: "author", content: "TRAVAY" },
+      { property: "og:title", content: "TRAVAY — Emplois en Haïti" },
       {
         property: "og:description",
         content: "La plateforme d'emploi haïtienne : offres, candidatures et messagerie directe.",

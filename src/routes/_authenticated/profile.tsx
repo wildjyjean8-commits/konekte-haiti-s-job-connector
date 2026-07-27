@@ -20,9 +20,9 @@ import { CV_MAX_SIZE, CV_TYPES, signedUrl } from "@/lib/konekte";
 export const Route = createFileRoute("/_authenticated/profile")({
   head: () => ({
     meta: [
-      { title: "Mon profil — KONEKTE" },
-      { name: "description", content: "Complétez votre profil KONEKTE : compétences, expérience, localisation et CV." },
-      { property: "og:title", content: "Mon profil — KONEKTE" },
+      { title: "Mon profil — TRAVAY" },
+      { name: "description", content: "Complétez votre profil TRAVAY : compétences, expérience, localisation et CV." },
+      { property: "og:title", content: "Mon profil — TRAVAY" },
       { property: "og:description", content: "Un profil complet augmente vos chances d'être recruté." },
     ],
   }),

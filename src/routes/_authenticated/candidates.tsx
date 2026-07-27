@@ -18,9 +18,9 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 export const Route = createFileRoute("/_authenticated/candidates")({
   head: () => ({
     meta: [
-      { title: "Candidats — KONEKTE" },
+      { title: "Candidats — TRAVAY" },
       { name: "description", content: "Recherchez des candidats par secteur, compétence, département et commune en Haïti." },
-      { property: "og:title", content: "Candidats — KONEKTE" },
+      { property: "og:title", content: "Candidats — TRAVAY" },
       { property: "og:description", content: "Trouvez le bon profil près de chez vous." },
     ],
   }),

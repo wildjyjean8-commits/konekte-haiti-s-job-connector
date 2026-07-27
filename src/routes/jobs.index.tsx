@@ -31,12 +31,12 @@ export const Route = createFileRoute("/jobs/")({
   }),
   head: () => ({
     meta: [
-      { title: "Offres d'emploi en Haïti — KONEKTE" },
+      { title: "Offres d'emploi en Haïti — TRAVAY" },
       {
         name: "description",
-        content: "Recherchez des offres d'emploi par secteur, département et commune partout en Haïti sur KONEKTE.",
+        content: "Recherchez des offres d'emploi par secteur, département et commune partout en Haïti sur TRAVAY.",
       },
-      { property: "og:title", content: "Offres d'emploi en Haïti — KONEKTE" },
+      { property: "og:title", content: "Offres d'emploi en Haïti — TRAVAY" },
       { property: "og:description", content: "Filtres par secteur, département, commune, type de contrat et expérience." },
     ],
   }),

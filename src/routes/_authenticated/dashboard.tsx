@@ -13,10 +13,10 @@ import { timeAgo } from "@/lib/konekte";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Tableau de bord — KONEKTE" },
-      { name: "description", content: "Suivez vos candidatures, vos offres sauvegardées et votre activité sur KONEKTE." },
-      { property: "og:title", content: "Tableau de bord — KONEKTE" },
-      { property: "og:description", content: "Votre activité KONEKTE en un coup d'œil." },
+      { title: "Tableau de bord — TRAVAY" },
+      { name: "description", content: "Suivez vos candidatures, vos offres sauvegardées et votre activité sur TRAVAY." },
+      { property: "og:title", content: "Tableau de bord — TRAVAY" },
+      { property: "og:description", content: "Votre activité TRAVAY en un coup d'œil." },
     ],
   }),
   component: Dashboard,

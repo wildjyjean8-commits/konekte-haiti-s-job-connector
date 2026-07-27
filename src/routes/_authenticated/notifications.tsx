@@ -11,9 +11,9 @@ import { timeAgo } from "@/lib/konekte";
 export const Route = createFileRoute("/_authenticated/notifications")({
   head: () => ({
     meta: [
-      { title: "Notifications — KONEKTE" },
-      { name: "description", content: "Toutes vos alertes KONEKTE : candidatures, messages et nouvelles offres." },
-      { property: "og:title", content: "Notifications — KONEKTE" },
+      { title: "Notifications — TRAVAY" },
+      { name: "description", content: "Toutes vos alertes TRAVAY : candidatures, messages et nouvelles offres." },
+      { property: "og:title", content: "Notifications — TRAVAY" },
       { property: "og:description", content: "Ne manquez aucune opportunité." },
     ],
   }),
