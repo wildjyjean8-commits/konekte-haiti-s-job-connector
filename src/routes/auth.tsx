@@ -23,10 +23,10 @@ export const Route = createFileRoute("/auth")({
   }),
   head: () => ({
     meta: [
-      { title: "Connexion & inscription — TRAVAY" },
-      { name: "description", content: "Créez votre compte TRAVAY, chercheur d'emploi ou institution, et commencez tout de suite." },
-      { property: "og:title", content: "Connexion & inscription — TRAVAY" },
-      { property: "og:description", content: "Rejoignez la plateforme d'emploi haïtienne TRAVAY." },
+      { title: "Connexion & inscription — RecruteHT" },
+      { name: "description", content: "Créez votre compte RecruteHT, chercheur d'emploi ou institution, et commencez tout de suite." },
+      { property: "og:title", content: "Connexion & inscription — RecruteHT" },
+      { property: "og:description", content: "Rejoignez la plateforme d'emploi haïtienne RecruteHT." },
     ],
   }),
   component: AuthPage,

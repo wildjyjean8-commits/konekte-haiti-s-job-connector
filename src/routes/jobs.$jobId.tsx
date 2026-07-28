@@ -17,9 +17,9 @@ import { getOrCreateConversation, notify, timeAgo } from "@/lib/konekte";
 export const Route = createFileRoute("/jobs/$jobId")({
   head: () => ({
     meta: [
-      { title: "Offre d'emploi — TRAVAY" },
+      { title: "Offre d'emploi — RecruteHT" },
       { name: "description", content: "Détails de l'offre d'emploi : missions, lieu, contrat et candidature en un clic." },
-      { property: "og:title", content: "Offre d'emploi — TRAVAY" },
+      { property: "og:title", content: "Offre d'emploi — RecruteHT" },
       { property: "og:description", content: "Postulez en un clic et échangez directement avec l'institution." },
     ],
   }),

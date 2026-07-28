@@ -17,9 +17,9 @@ import { notify } from "@/lib/konekte";
 export const Route = createFileRoute("/_authenticated/post-job")({
   head: () => ({
     meta: [
-      { title: "Publier une offre — TRAVAY" },
+      { title: "Publier une offre — RecruteHT" },
       { name: "description", content: "Publiez une offre d'emploi visible par des milliers de candidats partout en Haïti." },
-      { property: "og:title", content: "Publier une offre — TRAVAY" },
+      { property: "og:title", content: "Publier une offre — RecruteHT" },
       { property: "og:description", content: "Recrutez rapidement dans les 10 départements d'Haïti." },
     ],
   }),

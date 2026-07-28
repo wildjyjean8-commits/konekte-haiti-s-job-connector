@@ -17,9 +17,9 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/_authenticated/institution")({
   head: () => ({
     meta: [
-      { title: "Mon institution — TRAVAY" },
-      { name: "description", content: "Gérez la fiche de votre institution et vos coordonnées de recrutement sur TRAVAY." },
-      { property: "og:title", content: "Mon institution — TRAVAY" },
+      { title: "Mon institution — RecruteHT" },
+      { name: "description", content: "Gérez la fiche de votre institution et vos coordonnées de recrutement sur RecruteHT." },
+      { property: "og:title", content: "Mon institution — RecruteHT" },
       { property: "og:description", content: "Présentez votre institution aux talents haïtiens." },
     ],
   }),

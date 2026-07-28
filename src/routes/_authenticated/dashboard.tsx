@@ -13,10 +13,10 @@ import { timeAgo } from "@/lib/konekte";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Tableau de bord — TRAVAY" },
-      { name: "description", content: "Suivez vos candidatures, vos offres sauvegardées et votre activité sur TRAVAY." },
-      { property: "og:title", content: "Tableau de bord — TRAVAY" },
-      { property: "og:description", content: "Votre activité TRAVAY en un coup d'œil." },
+      { title: "Tableau de bord — RecruteHT" },
+      { name: "description", content: "Suivez vos candidatures, vos offres sauvegardées et votre activité sur RecruteHT." },
+      { property: "og:title", content: "Tableau de bord — RecruteHT" },
+      { property: "og:description", content: "Votre activité RecruteHT en un coup d'œil." },
     ],
   }),
   component: Dashboard,
@@ -112,9 +112,6 @@ function Dashboard() {
                   {j.department} · {timeAgo(j.created_at, lang)}
                 </p>
               </div>
-              <span className="flex items-center gap-1 text-xs text-muted-foreground">
-                <Eye className="h-3.5 w-3.5" /> {j.views_count ?? 0}
-              </span>
               <Badge variant={j.status === "open" ? "default" : "secondary"}>{j.status}</Badge>
             </Card>
           ))}

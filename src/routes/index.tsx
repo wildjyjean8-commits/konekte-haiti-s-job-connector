@@ -14,13 +14,13 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "TRAVAY — Trouvez un emploi en Haïti" },
+      { title: "RecruteHT — Trouvez un emploi en Haïti" },
       {
         name: "description",
         content:
-          "TRAVAY relie institutions et chercheurs d'emploi dans les 10 départements d'Haïti : offres, candidature en un clic, messagerie directe.",
+          "RecruteHT relie institutions et chercheurs d'emploi dans les 10 départements d'Haïti : offres, candidature en un clic, messagerie directe.",
       },
-      { property: "og:title", content: "TRAVAY — Trouvez un emploi en Haïti" },
+      { property: "og:title", content: "RecruteHT — Trouvez un emploi en Haïti" },
       {
         property: "og:description",
         content: "Offres d'emploi par département et commune, candidature en un clic, messagerie directe.",
@@ -112,7 +112,7 @@ function Index() {
       <section className="mx-auto max-w-6xl px-4 py-10">
         <h2 className="font-display text-2xl font-bold">{t("home.sectors")}</h2>
         <div className="mt-4 flex flex-wrap gap-2">
-          {SECTORS.map((s) => (
+          {SECTORS.slice(0, 14).map((s) => (
             <Link
               key={s.value}
               to="/jobs"
