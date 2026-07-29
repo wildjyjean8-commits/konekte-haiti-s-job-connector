@@ -61,6 +61,7 @@ export const DICT: Dict = {
     ht: "Don ou a ede fè RecruteHT rive jwenn plis moun k ap chèche travay ak plis antrepriz nan tout peyi a, pou konekte plis moun ak travay.",
   },
   "donate.moncash": { fr: "Numéro MonCash", ht: "Nimewo MonCash" },
+  "donate.cta": { fr: "Voir le numéro MonCash", ht: "Wè nimewo MonCash la" },
 
   "about.title": { fr: "À propos de moi", ht: "Apwopo mwen" },
   "about.p1": {

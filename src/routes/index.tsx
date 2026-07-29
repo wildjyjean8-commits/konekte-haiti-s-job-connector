@@ -5,6 +5,7 @@ import { Search, ArrowRight, ShieldCheck, MessagesSquare, FileText, Heart } from
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { JobCard, type JobRow } from "@/components/JobCard";
 import { LocationSelects } from "@/components/Selects";
 import { SECTORS } from "@/lib/haiti";
@@ -151,10 +152,17 @@ function Index() {
               <p className="mt-1 max-w-xl text-sm text-muted-foreground">{t("donate.body")}</p>
             </div>
           </div>
-          <div className="shrink-0 rounded-xl border border-border bg-card px-4 py-3 text-center">
-            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{t("donate.moncash")}</p>
-            <p className="mt-1 font-display text-xl font-extrabold tracking-tight text-foreground">3904-9733</p>
-          </div>
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button variant="secondary" className="shrink-0">
+                {t("donate.cta")}
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent align="end" className="w-auto text-center">
+              <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{t("donate.moncash")}</p>
+              <p className="mt-1 font-display text-xl font-extrabold tracking-tight text-foreground">3904-9733</p>
+            </PopoverContent>
+          </Popover>
         </Card>
       </section>
 
