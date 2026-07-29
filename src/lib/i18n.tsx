@@ -20,8 +20,8 @@ export const DICT: Dict = {
 
   "home.hero.title": { fr: "Trouvez du travail. Trouvez les bonnes personnes.", ht: "Jwenn travay. Jwenn bon moun yo." },
   "home.hero.sub": {
-    fr: "TRAVAY relie les institutions et les chercheurs d'emploi dans les 10 départements d'Haïti, dans tous les secteurs.",
-    ht: "TRAVAY konekte enstitisyon ak moun k ap chèche travay nan 10 depatman Ayiti yo, nan tout sektè.",
+    fr: "RecruteHT relie les institutions et les chercheurs d'emploi dans les 10 départements d'Haïti, dans tous les secteurs.",
+    ht: "RecruteHT konekte enstitisyon ak moun k ap chèche travay nan 10 depatman Ayiti yo, nan tout sektè.",
   },
   "home.cta.seeker": { fr: "Je cherche du travail", ht: "M ap chèche travay" },
   "home.cta.institution": { fr: "Je recrute", ht: "M ap rekrite" },
@@ -53,7 +53,30 @@ export const DICT: Dict = {
   "job.coverletter": { fr: "Message d'accompagnement", ht: "Mesaj akonpayman" },
   "job.cvattached": { fr: "Votre CV sera automatiquement joint.", ht: "CV ou ap tache otomatikman." },
 
-  "auth.title": { fr: "Bienvenue sur TRAVAY", ht: "Byenveni sou TRAVAY" },
+  "nav.about": { fr: "À propos", ht: "Apwopo" },
+
+  "donate.title": { fr: "Soutenez RecruteHT", ht: "Soutni RecruteHT" },
+  "donate.body": {
+    fr: "Votre don aide à faire connaître RecruteHT à plus de chercheurs d'emploi et d'entreprises partout en Haïti, pour connecter encore plus de personnes à un travail.",
+    ht: "Don ou a ede fè RecruteHT rive jwenn plis moun k ap chèche travay ak plis antrepriz nan tout peyi a, pou konekte plis moun ak travay.",
+  },
+  "donate.moncash": { fr: "Numéro MonCash", ht: "Nimewo MonCash" },
+
+  "about.title": { fr: "À propos de moi", ht: "Apwopo mwen" },
+  "about.p1": {
+    fr: "Je suis Wildjy Jean, entrepreneur, spécialiste en marketing digital, développeur web et graphiste passionné par l'innovation et la création de solutions numériques. Je suis le fondateur de G-Groupe HT, un groupe d'entreprises regroupant plusieurs projets dans les domaines de la technologie, du commerce, des services et du développement professionnel.",
+    ht: "Mwen se Wildjy Jean, antreprenè, espesyalis nan maketing dijital, devlopè web ak grafis ki gen pasyon pou inovasyon ak kreyasyon solisyon nimerik. Mwen se fondatè G-Groupe HT, yon gwoup antrepriz ki regwoupe plizyè pwojè nan domèn teknoloji, komès, sèvis ak devlopman pwofesyonèl.",
+  },
+  "about.p2": {
+    fr: "À travers TravayHT.com, mon objectif est de créer un pont entre les entreprises et les talents en Haïti, en facilitant l'accès à l'emploi et en modernisant le processus de recrutement grâce aux outils numériques.",
+    ht: "Atravè TravayHT.com, objektif mwen se kreye yon pon ant antrepriz yo ak talan yo an Ayiti, an fasilite aksè nan travay e modènize pwosesis rekritman an gras a zouti nimerik yo.",
+  },
+  "about.p3": {
+    fr: "Je crois que la technologie et l'entrepreneuriat sont des leviers essentiels pour créer de nouvelles opportunités. Ma vision est de construire des plateformes et des entreprises qui apportent des solutions concrètes aux besoins de la population et contribuent au développement économique d'Haïti.",
+    ht: "Mwen kwè teknoloji ak antreprenarya se levye esansyèl pou kreye nouvo opòtinite. Vizyon mwen se bati platfòm ak antrepriz ki bay solisyon konkrè pou bezwen popilasyon an e kontribye nan devlopman ekonomik Ayiti.",
+  },
+
+  "auth.title": { fr: "Bienvenue sur RecruteHT", ht: "Byenveni sou RecruteHT" },
   "auth.signin": { fr: "Connexion", ht: "Koneksyon" },
   "auth.signup": { fr: "Créer un compte", ht: "Kreye yon kont" },
   "auth.email": { fr: "Email", ht: "Imèl" },

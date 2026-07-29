@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, Bell, MessageSquare, Briefcase, LayoutDashboard, Users, LogOut, User as UserIcon, Building2 } from "lucide-react";
+import { Menu, Bell, MessageSquare, Briefcase, LayoutDashboard, Users, LogOut, User as UserIcon, Building2, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Badge } from "@/components/ui/badge";
@@ -219,6 +219,45 @@ export function Footer() {
           <Link to="/jobs" className="hover:text-foreground">
             {t("nav.jobs")}
           </Link>
+          <Link to="/apropos" className="hover:text-foreground">
+            {t("nav.about")}
+          </Link>
+          <a
+            href="https://www.facebook.com/share/191sd3JnFf/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="hover:text-foreground"
+          >
+            <Facebook className="h-4 w-4" />
+          </a>
+          <a
+            href="https://www.instagram.com/wildjy_jean?igsh=MWJ3bHJ6Y3diZXJqbw%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="hover:text-foreground"
+          >
+            <Instagram className="h-4 w-4" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/wildjy-jean-672a66324"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="hover:text-foreground"
+          >
+            <Linkedin className="h-4 w-4" />
+          </a>
+          <a
+            href="https://x.com/jean_wildjy?s=11"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+            className="hover:text-foreground"
+          >
+            <Twitter className="h-4 w-4" />
+          </a>
           <Link to="/auth" className="hover:text-foreground">
             {t("nav.signin")}
           </Link>

@@ -1,7 +1,7 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { Search, ArrowRight, ShieldCheck, MessagesSquare, FileText } from "lucide-react";
+import { Search, ArrowRight, ShieldCheck, MessagesSquare, FileText, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -138,6 +138,24 @@ function Index() {
           ))}
           {jobs && jobs.length === 0 && <p className="text-sm text-muted-foreground">{t("job.none")}</p>}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-4">
+        <Card className="flex flex-col items-start gap-4 border-gold/40 bg-gold-gradient/10 p-6 shadow-soft sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-start gap-3">
+            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-gold-gradient text-gold-foreground">
+              <Heart className="h-5 w-5" />
+            </span>
+            <div>
+              <h3 className="font-display text-lg font-bold">{t("donate.title")}</h3>
+              <p className="mt-1 max-w-xl text-sm text-muted-foreground">{t("donate.body")}</p>
+            </div>
+          </div>
+          <div className="shrink-0 rounded-xl border border-border bg-card px-4 py-3 text-center">
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{t("donate.moncash")}</p>
+            <p className="mt-1 font-display text-xl font-extrabold tracking-tight text-foreground">3904-9733</p>
+          </div>
+        </Card>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-10">
