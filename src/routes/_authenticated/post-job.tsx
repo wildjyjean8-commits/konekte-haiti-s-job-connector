@@ -28,7 +28,7 @@ export const Route = createFileRoute("/_authenticated/post-job")({
 
 function PostJob() {
   const { t } = useI18n();
-  const { institution } = useAuth();
+  const { institution, user } = useAuth();
   const navigate = useNavigate();
   const [busy, setBusy] = useState(false);
   const [title, setTitle] = useState("");
@@ -67,24 +67,17 @@ function PostJob() {
         .single();
       if (error) throw error;
 
-      const { data: alerts } = await supabase
-        .from("job_alerts")
-        .select("user_id,sector,department")
-        .eq("is_active", true);
-      await Promise.all(
-        (alerts ?? [])
-          .filter((a) => (!a.sector || a.sector === sector) && (!a.department || a.department === department))
-          .slice(0, 50)
-          .map((a) =>
-            notify({
-              userId: a.user_id,
-              type: "job_alert",
-              title: "Nouvelle offre correspondant à votre alerte",
-              body: title,
-              link: `/jobs/${data.id}`,
-            }),
-          ),
-      );
+      // Les alertes candidats sont envoyées par le trigger SQL `notify_job_alerts`
+      // (voir supabase/migrations), car la RLS empêche de lire les alertes des autres.
+      if (user) {
+        await notify({
+          userId: user.id,
+          type: "job_posted",
+          title: "Offre publiée",
+          body: title.trim(),
+          link: `/jobs/${data.id}`,
+        });
+      }
 
       toast.success(t("common.saved"));
       void navigate({ to: "/jobs/$jobId", params: { jobId: data.id } });
