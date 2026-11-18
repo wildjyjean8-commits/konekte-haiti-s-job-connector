@@ -20,13 +20,14 @@ export async function notify(params: {
   body?: string;
   link?: string;
 }) {
-  await supabase.from("notifications").insert({
+  const { error } = await supabase.from("notifications").insert({
     user_id: params.userId,
     type: params.type,
     title: params.title,
     body: params.body ?? null,
     link: params.link ?? null,
   });
+  if (error) console.error("notify failed", error);
 }
 
 

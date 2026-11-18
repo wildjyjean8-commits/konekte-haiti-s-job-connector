@@ -107,7 +107,7 @@ function JobDetail() {
         type: "application",
         title: "Nouvelle candidature",
         body: `Une candidature a été reçue pour « ${job.title} ».`,
-        link: "/institution/applications",
+        link: "/dashboard",
       });
       toast.success(t("job.applied"));
       setOpen(false);
